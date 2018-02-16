@@ -23,7 +23,6 @@ COPY refrac.tar.gz refrac.tar.gz
 RUN tar -zxvf refrac.tar.gz
 
 # set up data directory for bind external data 
-WORKDIR /
 RUN mkdir data
 
 # test
