@@ -1,7 +1,9 @@
 FROM stevenrbrandt/science-base
 USER root
 RUN mkdir /model
+RUN mkdir /work
 RUN chown jovyan /model
+RUN chown jovyan /work
 USER jovyan
 
 # download swan source code and extract it 
