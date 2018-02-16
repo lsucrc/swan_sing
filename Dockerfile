@@ -6,8 +6,8 @@ USER jovyan
 
 # download swan source code and extract it 
 WORKDIR /model
-RUN wget http://swanmodel.sourceforge.net/download/zip/swan4120.tar.gz && \
-    tar -zxvf swan4120.tar.gz 
+COPY swan4120.tar.gz swan4120.tar.gz
+RUN tar -zxvf swan4120.tar.gz
     
 # compile swan 
 WORKDIR swan4120
