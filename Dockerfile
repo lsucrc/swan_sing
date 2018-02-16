@@ -5,8 +5,6 @@ RUN mkdir /work
 RUN mkdir /project
 RUN mkdir /project/singularity
 RUN mkdir /project/singularity/bin
-RUN mkdir /var/spool
-RUN chown jovyan /var/spool
 RUN chown jovyan /project
 RUN chown jovyan /project/singularity
 RUN chown jovyan /project/singularity/bin
