@@ -2,6 +2,12 @@ FROM stevenrbrandt/science-base
 USER root
 RUN mkdir /model
 RUN mkdir /work
+RUN mkdir /project
+RUN mkdir /project/singularity
+RUN mkdir /project/singularity/bin
+RUN chown jovyan /project
+RUN chown jovyan /project/singularity
+RUN chown jovyan /project/singularity/bin
 RUN chown jovyan /model
 RUN chown jovyan /work
 USER jovyan
