@@ -1,5 +1,6 @@
 FROM stevenrbrandt/science-base
 USER root
+RUN apt-get update
 RUN apt-get install -y curl
 RUN mkdir /model
 RUN mkdir /work
