@@ -14,6 +14,7 @@ RUN chown jovyan /project/singularity
 RUN chown jovyan /project/singularity/bin
 RUN chown jovyan /model
 RUN chown jovyan /work
+RUN touch /etc/ssh/ssh_known_hosts
 USER jovyan
 
 # download swan source code and extract it 
